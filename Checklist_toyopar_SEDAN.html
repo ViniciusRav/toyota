@@ -695,7 +695,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       .aspect-square {
         aspect-ratio: 1 / 1;
       }
-
+      .size-2 {
+        width: 0.65rem;
+        height: 0.65rem;
+      }
       .size-3 {
         width: 0.75rem;
         height: 0.75rem;
@@ -708,7 +711,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       .h-10 {
         height: 2.5rem;
       }
-
+      .h-12 {
+        height: 3rem;
+      }
       .h-14 {
         height: 3.5rem;
       }
@@ -2306,7 +2311,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         display: grid;
 
         flex-direction: column;
-        margin-top: 7rem;
+        margin-top: 4rem;
       }
     </style>
   </head>
@@ -2314,7 +2319,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     <!-- Pagina 1 -->
     <div class="px-4 print:ring-0 ring ring-inset ring-amber-600 page">
       <!-- Linha 1 -->
-      <div class="flex flex-row items-center overflow-hidden truncate mb-0.5">
+      <div class="flex flex-row items-center overflow-hidden truncate">
         <!-- Coluna 1 -->
         <div class="basis-1/5">
           <img
@@ -2324,17 +2329,23 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
         <!-- Coluna 2 -->
         <div class="basis-4/5">
-          <h1 class="text-center font-medium uppercase text-md">
+          <h1
+            class="text-center font-medium uppercase"
+            style="font-size: 0.9rem"
+          >
             Folha de Inspeção - Condições de Entrada e Saída do Veículo - Sedan
           </h1>
         </div>
       </div>
       <!-- Linha 2 -->
-      <div class="flex flex-row overflow-hidden truncate gap-0.5 my-0.5">
+      <div class="flex flex-row overflow-hidden truncate gap-0.5">
         <!-- Coluna 1 -->
         <div class="basis-1/3">
           <div class="rounded-sm bg-green-600">
-            <h1 class="px-1 text-center text-xs font-medium uppercase">
+            <h1
+              class="px-1 text-center text-xs font-medium uppercase"
+              style="font-size: 0.6rem"
+            >
               OK/Substituído
             </h1>
           </div>
@@ -2342,7 +2353,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <!-- Coluna 2 -->
         <div class="basis-1/3">
           <div class="rounded-sm bg-yellow-500">
-            <h1 class="px-1 text-center text-xs font-medium uppercase">
+            <h1
+              class="px-1 text-center text-xs font-medium uppercase"
+              style="font-size: 0.6rem"
+            >
               Requer Troca/Reparo Futuro
             </h1>
           </div>
@@ -2350,7 +2364,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <!-- Coluna 3 -->
         <div class="basis-1/3">
           <div class="rounded-sm bg-red-600">
-            <h1 class="px-1 text-center text-xs font-medium uppercase">
+            <h1
+              class="px-1 text-center text-xs font-medium uppercase"
+              style="font-size: 0.6rem"
+            >
               Requer Troca/Reparo Imediato
             </h1>
           </div>
@@ -2358,7 +2375,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <!-- Coluna 4 -->
         <div class="basis-1/3">
           <div class="rounded-sm bg-neutral-300">
-            <h1 class="px-1 text-center text-xs font-medium uppercase">
+            <h1
+              class="px-1 text-center text-xs font-medium uppercase"
+              style="font-size: 0.6rem"
+            >
               Original/Não original
             </h1>
           </div>
@@ -3521,7 +3541,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <div class="basis-1/3">
           <!-- Linha 1 -->
           <div
-            class="flex h-full w-full flex-col overflow-hidden rounded-sm border border-black"
+            class="flex w-full flex-col overflow-hidden rounded-sm border border-black"
           >
             <!-- THead -->
             <div
@@ -4390,42 +4410,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
               </div>
               <div
                 class="flex flex-row items-center overflow-hidden border-b border-black even:bg-neutral-100"
-              >
-                <div
-                  class="basis-2/3 overflow-hidden border-r border-black font-medium text-[0.5rem] px-0.5"
-                >
-                  <br />
-                </div>
-                <div class="flex basis-1/3 flex-row overflow-hidden">
-                  <div class="flex basis-full flex-row">
-                    <div
-                      class="flex basis-1/3 items-center justify-center border-r border-black"
-                    >
-                      <input
-                        class="transparent !p-[0.16rem]"
-                        type="radio"
-                        name=""
-                      />
-                    </div>
-                    <div
-                      class="flex basis-1/3 items-center justify-center border-r border-black"
-                    >
-                      <input
-                        class="transparent !p-[0.16rem]"
-                        type="radio"
-                        name=""
-                      />
-                    </div>
-                    <div class="flex basis-1/3 items-center justify-center">
-                      <input
-                        class="transparent !p-[0.16rem]"
-                        type="radio"
-                        name=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ></div>
             </div>
           </div>
         </div>
@@ -4535,11 +4520,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <div class="flex flex-col gap-0.5">
             <!-- Linha 1 -->
             <div
-              class="flex h-14 flex-col justify-between rounded-sm border border-black"
+              class="flex h-12 flex-col justify-between rounded-sm border border-black"
             >
-              <div
-                class="m-1 flex flex-row justify-between font-medium text-[0.5rem]"
-              >
+              <div class="m-1 flex flex-row justify-between text-[0.5rem]">
                 <div class="flex flex-row items-center" id="guincho">
                   <label class="basis-1/6 mx-0.5" for="guincho"
                     >Veículo oriundo de guincho/plataforma:</label
@@ -4679,9 +4662,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <div class="basis-1/2 overflow-hidden">
           <div class="flex flex-col gap-0.5">
             <!-- Linha 1 -->
-            <div
-              class="flex h-14 flex-col justify-between rounded-sm border border-black"
-            >
+            <div class="flex h-12 flex-col rounded-sm border border-black">
               <div class="flex flex-row">
                 <div
                   class="flex flex-row items-center font-medium text-[0.5rem]"
@@ -4817,13 +4798,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
       </div>
       <!-- Linha 7 -->
-      <div class="flex overflow-hidden truncate gap-0.5 my-0.5">
+      <div
+        class="flex overflow-hidden truncate gap-0.5 my-0.5"
+        style="gap: 0.1px"
+      >
         <!-- Coluna 1 -->
         <div class="flex basis-1/3 flex-col overflow-hidden">
           <!-- Section 1 -->
           <div class="flex basis-10/12 flex-col">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Parte Interna</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -5884,7 +5868,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="filtrosuccombustivel"
                 >
                   Filtro de sucção da bomba de combustível - substituição a cada
@@ -5958,7 +5942,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 2 -->
           <div class="flex basis-2/12 flex-col pt-0.5">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Parte Externa</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -6028,7 +6012,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 >
                   Iluminação dianteira e traseira e/ou farol xeon ●
                   <img
-                    class="aspect-square size-3 inline"
+                    class="aspect-square size-2 inline"
                     src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICAgICAgICAiaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMtU1ZHLTIwMDEwOTA0L0RURC9zdmcxMC5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICAgIHdpZHRoPSIxMjgwLjAwMDAwMHB0IiBoZWlnaHQ9IjEyODAuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAxMjgwLjAwMDAwMCAxMjgwLjAwMDAwMCIKICAgICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KICAgIDxtZXRhZGF0YT4KICAgICAgICBDcmVhdGVkIGJ5IHBvdHJhY2UgMS4xNSwgd3JpdHRlbiBieSBQZXRlciBTZWxpbmdlciAyMDAxLTIwMTcKICAgIDwvbWV0YWRhdGE+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwxMjgwLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKICAgICAgIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSI+CiAgICAgICAgPHBhdGggZD0iTTMyMDAgOTYwMSBsLTMyMDUgLTMyMDAgMzIwMCAtMzIwMCAzMjAwIC0zMjAxIDMyMDMgMzIwMiAzMjAyIDMyMDMKLTMxOTcgMzE5NyAtMzE5OCAzMTk4IC0zMjA1IC0zMTk5eiBtNTg5NSAtNTExIGwyNjkwIC0yNjkwIC0yNjkzIC0yNjkzIC0yNjkyCi0yNjkyIC0yNjkyIDI2OTIgLTI2OTMgMjY5MyAyNjkwIDI2OTAgYzE0NzkgMTQ3OSAyNjkyIDI2OTAgMjY5NSAyNjkwIDMgMAoxMjE2IC0xMjExIDI2OTUgLTI2OTB6Ii8+CiAgICAgICAgPHBhdGggZD0iTTYzMjUgOTcxNCBjLTI0NCAtMjggLTQ1NSAtMTA3IC02MDEgLTIyNSAtMTMwIC0xMDYgLTIwNCAtMjQxIC0yMDQKLTM3NCAwIC04NiA0NTggLTMxNDkgNDc5IC0zMjA1IDY0IC0xNjggMjA3IC0yODUgMzc2IC0zMDggMTUxIC0yMCAyODQgMjIgMzk1CjEyNSA3NCA2OCAxMjQgMTY0IDE0NiAyNzggMzIgMTc2IDQ1NCAzMDYxIDQ1NCAzMTA5IC0xIDI5NiAtMzQxIDU1MyAtNzg4IDU5NgotMTAyIDEwIC0xOTMgMTEgLTI1NyA0eiIvPgogICAgICAgIDxwYXRoIGQ9Ik02MjgwIDUxNTQgYy04NCAtMjIgLTIwOCAtODcgLTI3OCAtMTQ2IC0xNzMgLTE0NyAtMjYyIC0zNDcgLTI2MgotNTg4IDAgLTE3OCA0NyAtMzI3IDE0NyAtNDYyIDg3IC0xMTkgMjQ3IC0yMjcgMzkzIC0yNjUgODYgLTIyIDI0NCAtMjIgMzMwIDAKMTQ3IDM4IDMwNSAxNDQgMzkzIDI2NSAxNzEgMjMyIDE5OSA1NjggNjcgODIwIC05NyAxODggLTI1NSAzMTcgLTQ1MiAzNzIgLTg3CjI0IC0yNTQgMjYgLTMzOCA0eiIvPgogICAgPC9nPgo8L3N2Zz4K"
                   />
                 </p>
@@ -6099,7 +6083,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 1 -->
           <div class="flex basis-3/12 flex-col">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Com o Capô Aberto</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -6164,7 +6148,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.4rem] text-wrap leading-[0.9rem]"
                   for="vazamentos"
                 >
                   Vazamentos de óleo, água, combustível e/ou outros fluidos
@@ -6222,7 +6206,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="correias"
                 >
                   Correias de acionamento
@@ -6280,7 +6264,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="velas"
                 >
                   Velas de ignição (veículos flex - a cada 10 revisões)
@@ -6338,7 +6322,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="condicoesbateria"
                 >
                   Condições da bateria <span class="text-xs">△</span>
@@ -6487,7 +6471,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 2 -->
           <div class="flex basis-4/12 flex-col pt-0.5">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Fluidos</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -6552,7 +6536,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.45rem] text-wrap leading-[0.9rem]"
                   for="oleo"
                 >
                   Óleo do motor ●
@@ -6610,7 +6594,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="fluidolavador"
                 >
                   Fluido do lavador de para-brisa ●
@@ -6668,7 +6652,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.9rem]"
                   for="fluidoarrefecimento"
                 >
                   Fluido do sistema de arrefecimento do motor
@@ -6901,7 +6885,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.6rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.5rem] text-wrap leading-[0.6rem]"
                   for="fluidohibrido"
                 >
                   Nível do flúido de arrefecimento do sistema híbrido
@@ -6912,7 +6896,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 3 -->
           <div class="flex basis-5/12 flex-col pt-0.5">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Embaixo do Veículo</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -6977,7 +6961,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.55rem] text-wrap leading-[0.9rem]"
                   for="direcao"
                 >
                   Caixa de direção e barra de direção
@@ -7039,7 +7023,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.9rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.55rem] text-wrap leading-[0.9rem]"
                   for="canistercarvao"
                 >
                   Cânister de carvão ativado (se aplicavel)
@@ -7101,7 +7085,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </div>
                 </div>
                 <p
-                  class="pl-0.5 py-[0.04rem] text-[0.6rem] text-wrap leading-[0.6rem]"
+                  class="pl-0.5 py-[0.04rem] text-[0.55rem] text-wrap leading-[0.6rem]"
                   for="vazamentosemb"
                 >
                   Vazamentos de óleo, água, combustível e/ou outros fluidos
@@ -7592,7 +7576,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 1 -->
           <div class="">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">
                 Calibragem dos pneus ●
@@ -7609,7 +7593,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 <div class="basis-1/2"></div>
                 <div class="basis-1/2">
                   <h2
-                    class="text-center font-medium pl-0.5 py-[0.04rem] text-[0.6rem] leading-[0.9rem]"
+                    class="text-center font-medium pl-0.5 py-[0.04rem] text-[0.5rem] leading-[0.9rem]"
                   >
                     Calibrado
                   </h2>
@@ -7720,7 +7704,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           <!-- Section 2 -->
           <div class="pt-0.5">
             <div
-              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.7rem]"
+              class="flex flex-row items-center rounded-sm bg-sky-900 text-white text-[0.6rem]"
             >
               <div class="basis-11/12 uppercase mx-0.5">Freios</div>
               <div class="basis-1/12 rounded-sm bg-sky-950">
@@ -7730,7 +7714,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 />
               </div>
             </div>
-            <div class="mb-2 flex flex-row">
+            <div class="flex flex-row">
               <div class="m-auto basis-3/12 pr-0">
                 <img
                   class="m-auto w-12"
@@ -8043,7 +8027,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
               </div>
             </div>
-            <div class="mb-2 flex flex-row">
+            <div class="flex flex-row">
               <div class="m-auto basis-3/12 pr-0.5">
                 <img
                   class="m-auto w-12"
@@ -8356,7 +8340,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
               </div>
             </div>
-            <div class="mb-2 flex flex-row">
+            <div class="flex flex-row">
               <div class="m-auto basis-3/12 pr-0.5">
                 <img
                   class="m-auto w-12"
@@ -8523,7 +8507,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
               </div>
             </div>
-            <div class="mb-2 flex flex-row">
+            <div class="flex flex-row">
               <div class="m-auto basis-3/12 pr-0">
                 <img
                   class="m-auto w-12"
@@ -8710,7 +8694,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
               </h3>
             </div>
             <div
-              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.6rem]"
+              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.5rem]"
             >
               <span class="text-xs mr-1">△</span>
               <h3 class="font-bold">Verificar o estado de conservação</h3>
@@ -8724,7 +8708,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <div class="basis-full">
           <div class="flex w-full flex-row">
             <div
-              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.6rem]"
+              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.5rem]"
             >
               <h3 class="">Responsável:</h3>
               <textarea
@@ -8733,11 +8717,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 maxlength="20"
                 rows="1"
               >
-##RESPONSAVEL##</textarea
+##1000##</textarea
               >
             </div>
             <div
-              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.6rem]"
+              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.5rem]"
             >
               <h3 class="">Contato:</h3>
               <textarea
@@ -8750,7 +8734,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
               >
             </div>
             <div
-              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.6rem]"
+              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.5rem]"
             >
               <h3 class="">Prisma:</h3>
               <textarea
@@ -8763,7 +8747,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
               >
             </div>
             <div
-              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.6rem]"
+              class="flex h-full flex-auto flex-row items-center text-[0.6rem] leading-[0.5rem]"
             >
               <h3 class="">Cor:</h3>
               <textarea
@@ -8785,7 +8769,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       <!-- Linha 1 -->
       <div
         class="flex flex-row overflow-hidden truncate mb-0.5"
-        style="align-items: baseline"
+        style="align-items: center"
       >
         <!-- Coluna 1 -->
         <div class="basis-1/5">
@@ -8796,7 +8780,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
         <!-- Coluna 2 -->
         <div class="basis-4/5">
-          <h1 class="text-center font-medium uppercase text-md spacer">
+          <h1 class="text-center font-medium uppercase text-md">
             Fotos de Inspeção
           </h1>
         </div>
